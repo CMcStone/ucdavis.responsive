@@ -5,8 +5,8 @@
     <include package="plone.resource" file="meta.zcml"/>
 
     <plone:static 
-            name="beyondskins.responsive"
-            directory="theme/beyondskins.responsive" 
+            name="ucdavis.responsive"
+            directory="theme/ucdavis.responsive" 
             type="theme" />
 
 </configure>

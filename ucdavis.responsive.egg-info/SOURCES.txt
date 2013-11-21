@@ -1,0 +1,11 @@
+setup.py
+ucdavis/__init__.py
+ucdavis.responsive.egg-info/PKG-INFO
+ucdavis.responsive.egg-info/SOURCES.txt
+ucdavis.responsive.egg-info/dependency_links.txt
+ucdavis.responsive.egg-info/entry_points.txt
+ucdavis.responsive.egg-info/namespace_packages.txt
+ucdavis.responsive.egg-info/not-zip-safe
+ucdavis.responsive.egg-info/requires.txt
+ucdavis.responsive.egg-info/top_level.txt
+ucdavis/responsive/__init__.py
