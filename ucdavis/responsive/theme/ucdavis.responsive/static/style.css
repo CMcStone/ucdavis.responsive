@@ -1,5 +1,5 @@
 /*********************************************************
-beyondskins.Responsive - Diazo responsive theme for Plone
+ucdavis.Responsive - Diazo responsive theme for Plone
 Simples Consultoria - www.simplesconsultoria.com.br
 *********************************************************/
 
@@ -26,7 +26,7 @@ font-size: 62.5%; /* with this 1em = 10px */
 a:link, #content a:link, dl.portlet a:link {color:#205C90;}
 #content a:visited, dl.portlet a:visited {color: #266DAB;}
 #content a:hover, dl.portlet a:hover{color:#CCAD33 !important;}
-h1 {color: #205C90;}
+h1 {color: #184479;}
 h2, h3, h4, h5, h6 {color: #636363;}
 h1, h2, h3 {margin: 0.5em 0 0.5em;}
 p {line-height: 1.8em; margin: 0 0 1em 0;}
@@ -51,8 +51,18 @@ padding: 1em 0;
 #logo {padding: 3% 1%; float: left; width: 50%;}
 #logo img {max-width:100%;}
 #logo a {display:block; width:100%;}
+#portal-logo{
+	padding-left:5px;
+}
 
+#logosm h1{
+	float:left;
+	padding-left:2px;
+}
+.ucdavissm{
 
+float: right;
+}
 /* Personal tools */
 #portal-personaltools {font-size: 1.2em;}
 
@@ -73,7 +83,10 @@ display: inline-block;
 }
 #nav a:hover, #nav li.selected a {background: #335379;}
 #nav li.selected a {color:#CCAD33;}
-
+/*remove dots on nav tree level 1 due to ugliness */
+dl.portlet ul.navTreeLevel1 .navTreeItem {
+	list-style:none;
+}
 
 /* Searchbox */
 #portal-searchbox {float: right; margin-top: 3.5%;}
@@ -238,13 +251,13 @@ ul.jobTitle {
 
 }
 @media screen and (min-width: 481px) {
-	#logosmall{display:none;}
+	#logosm {display:none;} 
 	
 }
 
 @media screen and (max-width: 480px) {
-	#logo {display:none;}
-	#logosmall{max-width: 85%;}
+	#portal-logo {display:none;}
+	/*#logosm{max-width: 85%;}*/
 	td.headshot{display:none;}
 
 	#portal-breadcrumbs {display:none;}

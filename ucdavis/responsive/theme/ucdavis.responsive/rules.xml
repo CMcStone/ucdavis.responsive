@@ -23,7 +23,13 @@
     
     <!--Viewlets-->
     <replace css:content="#portal-personaltools" css:theme="#user" />    
-    <copy attributes="href title" css:content="#portal-logo" css:theme="#logo a" />
+    <!--copy attributes="href title" css:content="#portal-logo" css:theme="#logosmall" /-->
+    <replace css:theme="#logo" css:content="#portal-logo" />
+    <replace css:theme-children="#logosm h1">
+        <xsl:for-each css:select="a#portal-logo">
+          <xsl:value-of select="@title" />
+        </xsl:for-each>
+    </replace>
     <replace css:content="#portal-header p.hiddenStructure" css:theme="#accessibility" /> 
     <drop css:content=".searchSection" />
     <replace css:content="#portal-searchbox" css:theme="#search" />
