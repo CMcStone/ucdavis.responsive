@@ -7,7 +7,7 @@ version = open(os.path.join("ucdavis", "responsive", "version.txt")).read().stri
 setup(name='ucdavis.responsive',
       version=version,
       description="A responsive design for Plone/Diazo powered sites",
-      long_description=open(os.path.join("README.md")).read() + "\n" +
+      long_description=open(os.path.join("readme.md")).read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
