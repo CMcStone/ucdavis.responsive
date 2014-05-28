@@ -1,6 +1,10 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
-    xmlns:plone="http://namespaces.plone.org/plone">
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="ucdavis.responsive">
 
     <include package="plone.resource" file="meta.zcml"/>
 
@@ -8,5 +12,13 @@
             name="ucdavis.responsive"
             directory="theme/ucdavis.responsive" 
             type="theme" />
+		  
+    <genericsetup:registerProfile
+          name="default"
+          title="ucdavis.responsive"
+          directory="profiles/default"
+          description="Installs the ucdavis.responsive package"
+          provides="Products.GenericSetup.interfaces.EXTENSION"
+          />
 
 </configure>
